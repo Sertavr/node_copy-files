@@ -13,4 +13,4 @@ Linux cp command: `cp file.txt file-copy.txt`.
 
 ### Note: Use Node.js version 20 or higher
 
-If you haven't installed a specific Node.js version, you can manage multiple Node.js versions on your machine using tools like [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm) or [(Node.js version management)](https://nodejs.org/en/blog/release/v20.9.0). Ensure that the selected Node.js version aligns with the specified minimum version before proceeding with the project setup.
+If you haven't installed a specific Node.js version, you can manage multiple Node.js versions on your machine using tools like [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm) or [(Node.js version management)](https://nodejs.org/en/blog/release/v20.9.0). Ensure that the selected Node.js  version aligns with the specified minimum version before proceeding with the project setup.
