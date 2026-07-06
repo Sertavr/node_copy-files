@@ -12,7 +12,9 @@ const copy = () => {
       'Please specify path the source and the destination file path.',
     );
 
-    return;
+    throw new Error(
+      'Please specify path the source and the destination file path.',
+    );
   }
 
   const sourcePath = path.resolve(source);
@@ -21,7 +23,7 @@ const copy = () => {
   if (!fs.existsSync(sourcePath)) {
     console.error('File not found');
 
-    return;
+    throw new Error('File not found');
   }
 
   const statSource = fs.statSync(sourcePath);
@@ -29,7 +31,7 @@ const copy = () => {
   if (statSource.isDirectory()) {
     console.error('Copying directories is not allowed');
 
-    return;
+    throw new Error('Copying directories is not allowed');
   }
 
   try {
@@ -53,7 +55,9 @@ const copy = () => {
 
     return 'Successfully copied';
   } catch (err) {
-    console.error(err);
+    console.error(err.message);
+
+    throw new Error(err.message);
   }
 };
 
